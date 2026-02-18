@@ -1,0 +1,21 @@
+---
+---
+
+@use 'main.bundle';
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Jua', sans-serif !important;
+}
+
+code, pre, .highlight {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  /* 가독성을 위해 자간을 약간 조정할 수 있습니다. 필요 없으면 삭제하세요. */
+  letter-spacing: 0.03em; 
+}
+
+/* (선택 사항) 코드 블록 내부의 줄번호 부분 등 세부 요소도 강제 적용 */
+.highlight table td {
+    font-family: 'Noto Sans KR', sans-serif !important;
+}
