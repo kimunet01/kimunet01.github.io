@@ -14,9 +14,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 기뮤냊의 개발일지
+title: 기뮤냊 개발일지
 
-tagline: 게임 클라이언트 프로그래머를 향한 여정
+tagline: 게임 클라이언트 프로그래머가 되고 싶은 사람 ..
 
 description: >- # used by seo meta and the atom feed
   인하대학교 컴퓨터공학과
