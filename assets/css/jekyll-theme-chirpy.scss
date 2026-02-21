@@ -21,8 +21,16 @@ code, pre, .highlight {
     font-family: 'Noto Sans KR', sans-serif !important;
 }
 
-// 언어가 지정되지 않았거나 plaintext인 경우에만 헤더 숨기기
-div.language-plaintext .code-header,
-div.nohl .code-header {
+// plaintext나 nohl 클래스를 포함한 모든 코드 헤더 숨기기
+.language-plaintext ~ .code-header,
+.language-nohl ~ .code-header,
+div[class*="language-plaintext"] .code-header,
+div[class*="nohl"] .code-header {
+    display: none !important;
+}
+
+// 만약 위 코드가 안 된다면, 헤더 내부의 텍스트가 'Prompt'나 'Plaintext'인 경우를 타겟팅
+div.code-header:has(span[data-label-text="Plaintext"]),
+div.code-header:has(span[data-label-text="Prompt"]) {
     display: none !important;
 }
