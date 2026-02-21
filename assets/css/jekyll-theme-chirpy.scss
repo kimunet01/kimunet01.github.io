@@ -20,3 +20,9 @@ code, pre, .highlight {
 .highlight table td {
     font-family: 'Noto Sans KR', sans-serif !important;
 }
+
+// 언어가 지정되지 않았거나 plaintext인 경우에만 헤더 숨기기
+div.language-plaintext .code-header,
+div.nohl .code-header {
+    display: none !important;
+}
