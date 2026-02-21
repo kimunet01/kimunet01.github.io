@@ -30,7 +30,7 @@ div[class*="nohl"] .code-header {
 }
 
 // 박스 안팎의 하단 여백 정밀 조절
-div[class*="language-plaintext"] pre code,
-div[class*="nohl"] pre code{
-    padding-bottom: 0 !important; 
+div[class*="language-plaintext"] .highlight,
+div[class*="nohl"] .highlight{
+    padding-bottom: 0.2rem !important; 
 }
